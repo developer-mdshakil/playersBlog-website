@@ -1,0 +1,7 @@
+@media only screen and(max-width: 688px) {
+    .container{
+        width: 100%;
+    }.players {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
