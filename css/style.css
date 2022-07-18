@@ -1,0 +1,190 @@
+/******** google-fonts **********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+/*********** common css ************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E5E5E5;
+}
+img{
+    max-width: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contaienr{
+    width: 54.375rem;
+    height: auto;
+    background-color: #fff;
+    padding: 1.875rem;
+    border-radius: 0.313rem;
+    margin: auto;
+}
+/******************* playersBlog-area **************/
+.playersBlog-area{
+    margin-bottom: 1.25rem;
+}
+.top-playersArea{
+    margin-bottom: 1.875rem;
+}
+.topPlayers-title{
+   font-size: 1.5rem;
+   font-weight: 500;
+   font-family: 'Poppins', sans-serif;
+   color: #562EFF;
+   margin-bottom: 2.063rem;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 1.875rem;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 1.875rem;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.player h3{
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin-left: 1rem;
+}
+/************* top-blogArea ****************/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 0.875rem;
+    column-gap: 0.875rem;
+}
+.blog-widget{
+    display: flex;
+}
+.blog-widget .thumbnail img{
+    width: 14rem;
+    height: 7.938rem;
+}
+.blog-info{
+    margin-left: 0.625rem;
+}
+.blog-info h2{
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2rem;
+    margin-bottom: 0.375rem;
+}
+.blog-info p{
+    font-size: 1rem;
+    color: #9F9F9F;
+}
+.blog-author a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    color: #562EFF;
+}
+/********* latesCurses-area start css ***********/
+.cureses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.438rem;
+}
+.curses-banner{
+    width: 15.75rem;
+    height: auto;
+    border-radius: 0.313rem;
+    padding: 0.875rem;
+    box-shadow: -0.604rem 0.46rem 1.4rem rgb(0 0 0 / 5%);
+}
+.curses-banner img{
+    width: 16.625rem;
+    height: 8.75rem;
+    margin-bottom: 1.125rem;
+}
+.curses-details h2{
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.438rem;
+}
+.curses-details p{
+    font-size: 0.875rem;
+    color: #ED6B4F;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.813rem;
+    font-weight: 400;
+}
+.cuses-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-star{
+    font-size: 0.75rem;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.cuses-info span{
+    display: inline-block;
+    font-size: 0.938rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0.625rem;
+}
+.curse-duration {
+    display: block;
+    text-align: center;
+    width: 4.875rem;
+    height: auto;
+    background-color: #FEE5DF;
+    padding: 0.3rem;
+    border-radius: 0.918rem;
+    color: #ED6B4F;
+    font-size: 0.875rem;
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 500;
+    box-shadow: -0.604rem 0.46rem 1.4rem rgb(0 0 0 / 5%);
+}
+.fa-clock{
+    margin-right: 0.438rem;
+}
+/*----------------------------
+@Media quary css strarted
+---------------------------*/
+/******* mobile device respinsive **********/
+@media only screen and (max-width: 688px) {
+    .contaienr{
+        width: 100%;
+    }
+    .players, .blogs, .cureses {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog-widget{
+        flex-direction: column;
+    }
+}
+/** tablte device responsive ***/
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .contaienr{
+        width: 100%;
+    }
+    .players, .blogs, .cureses {
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
