@@ -221,7 +221,7 @@ hr{
 }
 /**************** media qury started *****************/
 /* mobile device responsive */
-@media only screen and(max-width: 688px) {
+@media only screen and (max-width: 688px) {
     .container{
         width: 100%;
     }
@@ -230,5 +230,9 @@ hr{
     }
     .players, .blog, .curses {
         grid-template-columns: repeat(1,1fr);
+        row-gap: 1rem;
+    }
+    .blogs-widget, .player {
+        flex-direction: column;
     }
 }
