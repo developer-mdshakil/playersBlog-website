@@ -225,9 +225,6 @@ hr{
     .container{
         width: 100%;
     }
-    .nav-area{
-        display: none;
-    }
     .players, .blog, .curses {
         grid-template-columns: repeat(1,1fr);
         row-gap: 1rem;
